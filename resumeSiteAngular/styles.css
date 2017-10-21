@@ -1,0 +1,413 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    height: 100%;
+    position: relative;
+    /*font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+}
+
+p {
+    color: #4B515D !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h1,
+h2 {
+    color: rgba(0, 0, 0, .90);
+}
+
+a {
+    transition: all .3s ease-in-out;
+}
+
+a:active,
+a:focus {
+    outline: none;
+    border: 0;
+}
+
+#heading {
+    font-size: 3em;
+}
+
+#menuIndicator {
+    position: fixed;
+    z-index: 3000;
+    right: 35px;
+    top: 50%;
+    margin-top: -5px;
+    color: #ddd;
+    border-right: thin solid #ccc;
+    padding: 0 5px;
+}
+
+#menuIndicator::after {
+    content: " Menu";
+}
+
+#myMenu {
+    position: fixed;
+    z-index: 3000;
+    right: 20px;
+    top: 50%;
+    margin-top: -50px;
+    width: 50px;
+}
+
+#myMenu ul {
+    list-style: none;
+    display: table;
+}
+
+#myMenu ul li a:focus,
+#myMenu ul li a:active {
+    color: red !important;
+}
+
+.panel {
+    border-radius: 0;
+}
+
+.panel-footer .btn {
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.panel-footer .growDiv {
+    height: 150px;
+    display: none;
+    font-size: .8em;
+    padding: 10px;
+    background: #fff;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .70);
+    z-index: 1;
+}
+
+.smallBorder {
+    display: block;
+    height: 1px;
+    width: 20px;
+    margin: 0 auto;
+}
+
+#experience .smallBorder {
+    border: thin solid #CC0000;
+}
+
+#skills .smallBorder {
+    border: thin solid #00C851;
+}
+
+#bio .smallBorder {
+    border: thin solid #6a1b9a;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.navbar li a {
+    font-size: 1em !important;
+}
+
+#about {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 70px 0 0 0;
+    color: #fff;
+    text-shadow: 1px 0 1px rgba(0, 0, 0, .95);
+    overflow: hidden;
+}
+
+#about h1 {
+    font-size: 3.5em;
+    color: #fff !important;
+}
+
+.aboutBackground {
+    background: url("images/hireDev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: scaleIn;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    /*transition: transform 10s ease-in;*/
+}
+
+
+/*background gray light #e6eaed*/
+
+#aboutFooter {
+    background: rgba(0, 0, 0, .50);
+    margin: 0;
+    padding: 15px 0;
+    color: #fff !important;
+    position: relative;
+    z-index: 2000;
+}
+
+#aboutFooter h2 {
+    color: #fff !important;
+}
+
+#aboutFooter p {
+    color: #258dfc !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.btnReveal {
+    position: relative;
+    z-index: 200;
+}
+
+.hireButton {
+    background: #258dfc;
+    margin-bottom: 10px;
+    color: #fff;
+    width: 200px;
+    border-radius: 0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .90);
+}
+
+.myButtonLeft {
+    position: relative;
+    left: 20%;
+}
+
+.myButtonRight {
+    position: relative;
+    right: 20%;
+}
+
+.mySubmit {
+    background: #CC0000;
+    color: #fff;
+    border-radius: 0;
+    height: 40px;
+    font-size: 1em !important;
+}
+
+.mySubmit:hover {
+    background: #fff;
+    color: #CC0000;
+    transition: all .20s ease-in-out;
+    font-weight: bold;
+    border: thin solid #CC0000;
+}
+
+.myImages img {
+    display: block;
+    margin: 0 auto;
+}
+
+#about h1,
+#about h2 {
+    z-index: 200;
+    position: relative;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+#about div.myImages {
+    padding-top: 25px;
+    z-index: 200;
+    width: 100%;
+    position: relative;
+}
+
+#about div.myImages h3 {
+    padding-left: 8px;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    text-align: center;
+}
+
+.snapshot p {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#experience {
+    background: url("images/snowpills.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+}
+
+#experience .container {
+    background: rgba(230, 234, 237, .40);
+    padding: 25px;
+}
+
+.experienceInfo>h3 {
+    color: #CC0000;
+}
+
+#skills {
+    background: #e6eaed;
+    padding: 15px 0;
+}
+
+#skills h3 {
+    color: #00C851 !important;
+}
+
+#skills>.container {
+    background: rgba(255, 255, 255, .60);
+}
+
+#skills h4 {
+    color: rgba(0, 0, 0, .60);
+}
+
+#skills div.myImages img {
+    width: 80%;
+}
+
+.progress {
+    box-shadow: 1px 0 1px rgba(0, 0, 0, .35);
+    border-radius: 0;
+}
+
+.progress-bar {
+    background: #00C851;
+}
+
+#bio {
+    line-height: 2;
+    padding: 15px 0;
+}
+
+#bio h4 {
+    font-weight: bold;
+}
+
+#bio h3 {
+    color: #6a1b9a !important;
+}
+
+#bio div.myImages img {
+    width: 80%;
+}
+
+#contact {
+    padding: 0 0 50px 0;
+    background: url("images/snowpills.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input,
+textarea {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+footer {
+    background: rgba(0, 0, 0, .90);
+    width: 100%;
+    height: 100px;
+    color: #fff;
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:focus {
+    font-size: 2em;
+    color: #fff;
+}
+
+.fa-power-off {
+    display: inline;
+    color: #CC0000;
+}
+
+.form-control {
+    border-radius: 0;
+    height: 40px;
+}
+
+.modal {
+    height: 100% !important;
+}
+
+.modal-dialog {
+    width: 80%;
+    margin: 15px auto;
+}
+
+.modal-content {
+    border: 0;
+    border-radius: 0;
+}
+
+.modal-header,
+.modal-footer {
+    background: #f1f1f1;
+}
+
+.carousel-indicators li {
+    border: thin solid rgba(0, 0, 0, .30);
+}
+
+.carousel-caption {
+    text-shadow: none;
+    font-weight: bold;
+    background: rgba(0, 0, 0, .65);
+}
+
+@media screen and (max-width:770px) {
+    .myButtonLeft {
+        position: relative;
+        left: 0;
+    }
+    .myButtonRight {
+        position: relative;
+        right: 0;
+    }
+}

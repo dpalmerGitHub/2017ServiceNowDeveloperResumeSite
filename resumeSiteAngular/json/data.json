@@ -1,0 +1,20 @@
+{
+    "model": {
+        "panelData": [{
+                "title": "Custom Applications",
+                "img": "images/customapplication.png",
+                "alt": "Custom App Image"
+            }, {
+                "title": "Instance Administration",
+                "img": "images/administration.png",
+                "alt": "Admin Image"
+            },
+            {
+                "title": "Platform Development",
+                "img": "images/development.png",
+                "alt": "Development Image"
+            }
+        ]
+
+    }
+}
