@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatabile" content="ie=edge">
-    <title>Daniel Palmer Resume Site</title>
+    <title>Daniel Palmer ServiceNow Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -56,10 +58,19 @@
                 <div class="col-md-12 col-xs-12">
                     <div class="text-center">
                         <h1 ng-bind-html="title"></h1>
-                    </div>
-                    <div class="myImages">
-                        <h3>Daniel Palmer</h3>
-                        <img src="images/developer.png" alt="Developer Picture">
+                        <h3>Hire Me Today</h3>
+                        <h2>Daniel M. Palmer</h2>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="col-md-6">
+                                    <h4>Certified ServiceNow Administrator</h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Certified Application Developer</h4>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -71,6 +82,7 @@
         <section id="aboutFooter">
             <div class="container text-center">
                 <h2>ServiceNow, Your Way</h2>
+                <span class="smallBorder"></span>
                 <p>Build your instance to meet your needs</p>
                 <div class="row text-center">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 btnReveal">
@@ -87,7 +99,7 @@
         <div class="container">
             <div class="experienceInfo text-center row">
                 <h3>Experience</h3>
-                <span class="smallBorder"></span>
+                <my-circles></my-circles>
                 <h2>Developing solutions and custom applications</h2>
                 <div class="col-md-6 col-md-offset-3">
                     <p>Create solutions within ServiceNow that streamline internal processes, utilizing ServiceNow's powerful and rich features to enhance user experience and make ServiceNow your number one platform</p>
@@ -103,7 +115,7 @@
         <div class="container">
             <div class="experienceInfo text-center row">
                 <h3>Skills</h3>
-                <span class="smallBorder"></span>
+                <my-circles></my-circles>
                 <h2>Front and Back End Development</h2>
                 <div class="col-md-6 col-md-offset-3">
                     <p>Whether its creating custom UI pages or widgets, developing complicated glide queries, or working on back-end workflows, ServiceNow can be customized to fit your needs with the right tools</p>
@@ -159,36 +171,10 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <h4>ServiceNow</h4>
+                        <h4>jQuery</h4>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
                                 <span class="sr-only">90%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>jQuery</h4>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                                <span class="sr-only">75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>SQL</h4>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%">
-                                <span class="sr-only">15%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>NodeJS</h4>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
-                                <span class="sr-only">10%</span>
                             </div>
                         </div>
                     </div>
@@ -201,14 +187,14 @@
         <div class="container">
             <div class="experienceInfo text-center row">
                 <h3>Bio</h3>
-                <span class="smallBorder"></span>
+                <my-circles></my-circles>
                 <h5>Current Title:</h5>
                 <h2>Application Developer for CBS Corporation</h2>
                 <div class="col-md-6 col-md-offset-3">
                     <p>Previously worked for Kate Spade as a ServiceNow developer and Application Support Analyst</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <blockquote class="infoLeft">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -233,16 +219,20 @@
                     </div>
                 </blockquote>
             </div>
-            <div class="col-md-6">
+            <!--<div class="col-md-6">
                 <div class="myImages infoRight"><img src="images/biography.png" alt="Biography Icon">
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
     <hr>
     <section id="contact">
         <div class="container">
-            <h1 class="text-center myForm">Lets Talk N<span style="color:#CC0000"><i class="fa fa-power-off" aria-hidden="true"></i></span>W</h1>
+            <div class="contactInfo text-center">
+                <h1 class="myForm">Lets Talk N<span style="color:#CC0000"><i class="fa fa-power-off" aria-hidden="true"></i></span>W</h1>
+                <p>Feel free to contact me directly at anytime with any questions or comments at my email below</p>
+                <h5>Email: dmpalmer212@gmail.com</h5>
+            </div>
             <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  col-xs-12">
                 <my-form></my-form>
             </div>

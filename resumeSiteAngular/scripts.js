@@ -2,11 +2,26 @@
 window.sr = ScrollReveal();
 var mainApp = angular.module('mainApp', ['ngSanitize']);
 mainApp.controller("mainCtrl", function($scope, $http) {
-    $scope.title = `ServiceN<i class="fa fa-power-off" aria-hidden="true"></i>w Developer`;
+    $scope.title = `Need A ServiceN<i class="fa fa-power-off" aria-hidden="true"></i>w Developer ?`;
     $http.get("../json/data.json").then(function(response) {
         $scope.data = response.data.model;
     });
 });
+mainApp.directive("myCircles", function($timeout) {
+    return {
+        restrict: "AE",
+        replace: true,
+        templateUrl: "directives/circles.html",
+        link: function($scope) {
+            $timeout(function() {
+                sr.reveal('.circles', {
+                    duration: 2000,
+                    origin: 'bottom'
+                });
+            })
+        }
+    }
+})
 
 mainApp.directive("myForm", function($timeout) {
     return {
@@ -111,9 +126,6 @@ $(document).ready(function() {
 
 
     /***********End About */
-
-
-
     //Smooth scroll on navbar link clicks
     $("a").on('click', function(event) {
         if (this.hash !== "") {
@@ -157,7 +169,7 @@ $(document).ready(function() {
     });
     sr.reveal('#about .btnReveal', {
         delay: 500,
-        duration: 2000,
+        duration: 500,
         origin: 'bottom',
         scale: .50
     });
