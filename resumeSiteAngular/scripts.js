@@ -7,64 +7,6 @@ mainApp.controller("mainCtrl", function($scope, $http) {
         $scope.data = response.data.model;
     });
 });
-mainApp.directive("myCircles", function($timeout) {
-    return {
-        restrict: "AE",
-        replace: true,
-        templateUrl: "directives/circles.html",
-        link: function($scope) {
-            $timeout(function() {
-                sr.reveal('.circles', {
-                    duration: 2000,
-                    origin: 'bottom'
-                });
-            })
-        }
-    }
-})
-
-mainApp.directive("myForm", function($timeout) {
-    return {
-        restrict: "AE",
-        replace: true,
-        templateUrl: "directives/form.html",
-        link: function($scope) {
-            $timeout(function() {
-                sr.reveal('.myForm', {
-                    duration: 2000,
-                    origin: 'top'
-                });
-            })
-        }
-    }
-})
-mainApp.directive("myPanels", function($timeout) {
-    return {
-        restrict: "AE",
-        replace: true,
-        templateUrl: "directives/panel.html",
-        link: function($scope) {
-            $timeout(function() {
-                sr.reveal('.myPanel', {
-                    duration: 1000,
-                    origin: 'top'
-                });
-                sr.reveal('.myPanel img', {
-                    delay: 500,
-                    duration: 1000,
-                    origin: 'bottom'
-                });
-
-                sr.reveal('.myPanel button', {
-                    delay: 700,
-                    duration: 1000,
-                    origin: 'top'
-                });
-            })
-        }
-    }
-
-});
 
 
 
@@ -152,11 +94,7 @@ $(document).ready(function() {
     //Scroll reveal settings
     window.sr = ScrollReveal();
 
-    sr.reveal('#about h1', {
-        duration: 1000,
-        origin: 'top',
-        scale: .50
-    });
+
     sr.reveal('#about h2', {
         delay: 500,
         duration: 1000,

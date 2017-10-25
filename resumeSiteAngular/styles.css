@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Nunito', sans-serif;
     color: #555;
     height: 100%;
@@ -282,13 +282,27 @@ a:focus {
     padding: 25px;
 }
 
-.experienceInfo>h3 {
+#experience .experienceInfo>h3,
+#experience .experienceInfo>h2 {
     color: #CC0000;
 }
 
 #skills {
-    background: #e6eaed;
-    padding: 15px 0;
+    /*background: #e6eaed;*/
+    background-image: url("images/snconference2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 25px 0;
+    position: relative;
+}
+
+#skills p {
+    color: #fff !important;
+}
+
+#skills h2 {
+    color: #00C851 !important;
 }
 
 #skills h3 {
@@ -296,24 +310,22 @@ a:focus {
 }
 
 #skills>.container {
-    background: rgba(255, 255, 255, .60);
+    background: rgba(250, 255, 255, .50);
+    color: rgb(255, 255, 255);
 }
 
-#skills h4 {
-    color: rgba(0, 0, 0, .60);
+#skills .experienceInfo {
+    position: relative;
+    z-index: 1000;
+    padding: 15px;
+}
+
+#skills div.myImages {
+    padding-bottom: 25px;
 }
 
 #skills div.myImages img {
     width: 80%;
-}
-
-.progress {
-    box-shadow: 1px 0 1px rgba(0, 0, 0, .35);
-    border-radius: 0;
-}
-
-.progress-bar {
-    background: #00C851;
 }
 
 #bio {
@@ -339,6 +351,19 @@ a:focus {
     background: url("images/snowpills.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#contact .row .fa {
+    font-size: 3.5em;
+    color: #CC0000;
+}
+
+#contact row h2 {
+    font-weight: bold;
+}
+
+#contact row a {
+    color: inherit;
 }
 
 input,
@@ -407,8 +432,9 @@ footer a:focus {
     i.fa-chevron-circle-right {
         display: none;
     }
-    #menuIndicator::after {
-        content: "";
+    #myMenu,
+    #menuIndicator {
+        display: none;
     }
     .myButtonLeft {
         position: relative;
